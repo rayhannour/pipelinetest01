@@ -9,7 +9,7 @@ pipeline {
 
     stage('deploykubernetes') {
       steps {
-        sh 'kubectl create deployment eureka-services --image=090380/eureka-services-1:latest --replicas=1'
+        sh 'sudo kubectl create deployment eureka-services --image=090380/eureka-services-1:latest --replicas=1'
       }
     }
 
